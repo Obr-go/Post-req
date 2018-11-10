@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="/Main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/Postreq.js"></script>
+
+
+    <title>NodeApp</title>
+  </head>
+  <body>
+  <form>
+    <input type="text" id="name"><br>
+    <input type="text" id="age"><br>
+    <input type="submit" value = "submit">
+
+  </form>
+
+  <button type="button" id = "lngthofname" name="button">Check length</button>
+
+  <div id ="dta">
+    <br>
+    <% for(n=0;n<data[0].length;n++){%>
+        <strong><%=n+1%>. <%=data[0][n]%></strong>
+     <%if(data[1].length>0){%>
+    Length is <%=data[0][n].length%>
+<%}%>
+<br>
+    <%}%>
+
+
+  </div>
+  </body>
+</html>
